@@ -66,10 +66,13 @@ nav .gitIcon {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #DBB5B5;
+    background-color: #C39898;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
 }
 
 .dropdown-content a {
@@ -84,6 +87,7 @@ nav .gitIcon {
 
 .dropdown-content a:hover {
     background-color: #987070;
+    border-radius: 25px;
 }
 
 .dropdown:hover .dropdown-content {
