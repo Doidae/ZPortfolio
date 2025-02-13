@@ -94,3 +94,39 @@ nav .gitIcon {
     display: block;
 }
 
+/* Fix the Intro Section */
+.intro {
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center the section horizontally */
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+    gap: 50px; /* Adds space between image and text */
+}
+
+/* Profile Picture Styling */
+.profilePic img {
+    width: 250px; /* Adjust size as needed */
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%; /* Makes it circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: url(http://goo.gl/vyAs27) no-repeat scroll 0 0;
+}
+
+/* Text Section */
+.shortBio {
+    max-width: 400px; /* Prevents it from being too wide */
+    text-align: left; /* Align text to the left */
+}
+
+.shortBio h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.shortBio h2 {
+    font-size: 24px;
+    color: #555;
+}
+
