@@ -7,40 +7,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="absolute left-0 right-0 top-0 z-50 h-16 px-safe pt-safe">
-        <nav>
-            <a href="#" class="logo">Andy A C</a>
-            <div class="links">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <!-- <a href="#">Projects</a> -->
-                <div class="dropdown">
-                    <button class="dropbtn">Projects</button>
-                    <div class="dropdown-content">
-                        <a href="#">Project 1</a>
-                        <a href="#">Project 2</a>
-                        <a href="#">Project 3</a>
-                    </div>
-                 </div>
-                <a href="#">Contact</a>
-            </div>
-            <div class="gitIcon">
-                <img src="/assets/github-mark-white.png" alt="Github icon">
-            </div>
-        </nav>
-        
-    </div>
-    <div class="intro">
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><img src="./assets/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li><a href="#Home" class="logo">Andy</a></li>
+            <li class="hideOnMobile"><a href="#About">About</a></li>
+            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#">Contact</a></li>
+            <li onclick=showSidebar() class="hideOnDesktop"><a href="#"><img src="./assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
+        </ul>
+    </nav>
+    <div class="intro" id="Home">
         <div class="profilePic">
-            <img src="/assets/andy.jpg" alt="Andy's profile picture">
+            <img src="http://placehold.co/200x400" alt="Andy's profile picture">
         </div>
         <div class="shortBio">
             <h1>Andy A C</h1>
             <h2>Full Stack Developer</h2>
         </div>
     </div>
+    <div class="About">
+        <h1 id="About">About</h1>
+        <p>I am a full stack developer. I have experience in both front-end and back-end development.</p>
+    </div>
     
-
+    <script src="script.js"></script>
 </body>
 </html>
-
