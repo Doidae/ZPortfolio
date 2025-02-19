@@ -12,13 +12,13 @@
             <li onclick=hideSidebar()><a href="#"><img src="./assets/close_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="#Projects">Projects</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <ul>
             <li><a href="#Home" class="logo">Andy</a></li>
             <li class="hideOnMobile"><a href="#About">About</a></li>
-            <li class="hideOnMobile"><a href="#">Projects</a></li>
+            <li class="hideOnMobile"><a href="#Projects">Projects</a></li>
             <li class="hideOnMobile"><a href="#">Contact</a></li>
             <li onclick=showSidebar() class="hideOnDesktop"><a href="#"><img src="./assets/menu_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg"></a></li>
         </ul>
@@ -32,13 +32,22 @@
             <h2>Full Stack Developer</h2>
         </div>
     </div>
-    <div class="About">
-        <h1 id="About">About</h1>
+    <div class="About" id="About">
+        <h1 >About</h1>
         <p>I am a full stack developer. I have experience in both front-end and back-end development.</p>
     </div>
-    <div class="Projects">
-        <h1>Projects</h1>
-        <div></div>
+    <div class="Projects" id="Projects">
+        <h1 >Projects</h1>
+        <div class="panel">
+            <img src="http://placehold.co/200x200" alt="Project 1">
+            <h2>Space Invaders</h2>
+            <p>This is the first project that I made for a bootcamp that I took. It is a simple game that I made using HTML, CSS, and JavaScript.</p>
+        </div>
+        <div class="panel">
+            <img src="http://placehold.co/200x200" alt="Project 2">
+            <h2>Project 2</h2>            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptate, officia blanditiis consequatur, vero vel repellat id expedita autem harum illum rerum sint dolor tenetur. Perspiciatis doloremque qui error dignissimos!</p>
+        </div>
     </div>
     
     <script src="script.js"></script>

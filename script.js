@@ -28,7 +28,7 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 500,
+                top: targetElement.offsetTop - 50,
                 behavior: "smooth"
             });
         }
