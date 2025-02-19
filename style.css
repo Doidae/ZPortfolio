@@ -12,7 +12,10 @@ body {
 nav {
     background-color: #987070;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-    /* display: flex; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
 }
 
 nav ul {
@@ -110,6 +113,8 @@ nav li:first-child {
 @media screen and (min-width: 769px) {
     .hideOnDesktop {
       display: none;
+      margin-top: 80px; /* Prevent content from being hidden under navbar */
+        height: 2000px; /* Just for scrolling effect */
     }
   }
 .About {
@@ -129,4 +134,13 @@ nav li:first-child {
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: 0.6s;
+}
+
+.Projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    gap: 50px;
 }
