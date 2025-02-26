@@ -43,3 +43,7 @@ window.addEventListener("scroll", function () {
       navbar.classList.remove("shrink");
     }
   });
+
+document.getElementById("myButton").onclick = function () {
+    window.location.href = "www.github.com";
+};
