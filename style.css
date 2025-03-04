@@ -3,18 +3,22 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
 }
+
+/* Navbar Styles */
 nav {
     background-color: #1D3557;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
 
@@ -25,6 +29,7 @@ nav ul {
     align-items: center;
     width: 100%;
 }
+
 nav li {
     height: 50px;
 }
@@ -74,14 +79,22 @@ nav li:first-child {
 .sidebar a:hover {
     background-color: #A8DADC;
 }
-.intro {
+
+.intro, .About, .Projects, .Contact {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    gap: 50px;
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+.Projects, .intro {
     background-color: #F1F1F1;
+}
+
+.About, .Contact {
+    background-color: #ffffff;
 }
 
 .profilePic img {
@@ -95,6 +108,7 @@ nav li:first-child {
 .shortBio {
     max-width: 400px;
     text-align: left;
+    margin-left: 30px;
 }
 
 .shortBio h1 {
@@ -107,55 +121,23 @@ nav li:first-child {
     color: #555;
 }
 
-@media screen and (max-width: 768px) {
-    .hideOnMobile {
-      display: none;
-    }
-  }
-
-@media screen and (min-width: 769px) {
-    .hideOnDesktop {
-      display: none;
-      margin-top: 80px;
-        height: 2000px;
-    }
-  }
-.About {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding: 20px;
-    gap: 50px;
-    background-color: white;
-}
-
-.logo {
-    font-weight: 700;
-    color: #fff;
-    font-size: 2em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    transition: 0.6s;
-}
-.Projects {
-    height: 10vh;
-    background-color: #F1F1F1;
-    
+.About h1 {
+    margin: 20px;
 }
 
 .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
-    padding: 40px;
-    /* width: 99%; */
-    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    
 }
 
 .Projects h1 {
-    /* position: relative; */
-    text-align: center; 
+    text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
     width: 100%;
@@ -167,6 +149,7 @@ nav li:first-child {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+    max-width: 300px;
 }
 
 .project-card:hover {
@@ -193,4 +176,62 @@ nav li:first-child {
 .project-info p {
     font-size: 1em;
     color: #555;
+}
+
+.Contact form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.Contact h1 {
+    margin: 20px;
+}
+
+input[type="text"], textarea[type="text"] {
+    background-color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+input[type=button] {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .intro, .About, .Projects, .Contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profilePic img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hideOnDesktop {
+        display: none;
+    }
 }
