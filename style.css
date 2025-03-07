@@ -196,7 +196,7 @@ nav li:first-child {
     gap: 10px;
 }
 
-.topBefore button {
+button {
     justify-content: center;
     align-items: center;
     color: white;
