@@ -185,54 +185,75 @@ nav li:first-child {
     margin: 20px;
 }
 
-.Contact h1 {
-    margin: 20px;
+.contact-section {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 600px;
 }
 
-.topBefore {
+.contact-section h1 {
+    font-size: 28px;
+    color: #1D3557;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.contact-buttons {
     display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
-    gap: 10px;
 }
 
-.topBefore button { 
-    justify-content: center;
+/* Fixing button issues on mobile */
+.contact-btn {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensures the button is clickable */
+    max-width: 300px;
+    text-align: center;
     color: white;
-    border: none;
-    border-radius: 2px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 5px;
     background: linear-gradient(to right, #2abfff, #0071FF);
     position: relative;
     z-index: 0;
     cursor: pointer;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    list-style: none;
     border: solid black 1px;
+    transition: all 0.3s ease-in-out;
 }
 
-.topBefore button::after{
-    content:"";
+.contact-btn::after {
+    content: "";
     background: linear-gradient(to right, #ffee00, #ffb300);
     height: 100%;
     width: 0%;
-    border-radius: 2px;
+    border-radius: 5px;
     position: absolute;
     left: 0;
     top: 0;
     z-index: -1;
-    transition: 150ms ease-in-out;
+    transition: width 150ms ease-in-out;
 }
 
-.topBefore button:hover::after{
+.contact-btn:hover::after {
     width: 100%;
 }
 
-.topBefore button:hover{
+.contact-btn:hover {
     color: black;
 }
 
