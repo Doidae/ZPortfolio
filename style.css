@@ -214,7 +214,7 @@ nav li:first-child {
     align-items: center;
 }
 
-/* Fixing button issues on mobile */
+
 .contact-btn {
     display: flex;
     align-items: center;
@@ -228,7 +228,7 @@ nav li:first-child {
     text-decoration: none;
     padding: 15px 20px;
     border-radius: 5px;
-    background: linear-gradient(to right, #2abfff, #0071FF);
+    background: linear-gradient(to right, #457B9D, #1D3557);
     position: relative;
     z-index: 0;
     cursor: pointer;
@@ -238,7 +238,7 @@ nav li:first-child {
 
 .contact-btn::after {
     content: "";
-    background: linear-gradient(to right, #ffee00, #ffb300);
+    background: linear-gradient(to right, #A8DADC, #F1FAEE);
     height: 100%;
     width: 0%;
     border-radius: 5px;
