@@ -51,5 +51,3 @@ document.getElementById("myButton").onclick = function () {
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-document.getElementById("last-updated").textContent = document.lastModified;
