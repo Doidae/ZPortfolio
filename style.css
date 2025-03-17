@@ -303,3 +303,61 @@ input[type=button] {
         display: none;
     }
 }
+
+footer {
+    background-color: #1D3557;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #A8DADC;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F1FAEE;
+}
+
+.back-to-top {
+    background-color: #A8DADC;
+    color: #1D3557;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #F1FAEE;
+}
+
+.back-to-top:focus {
+    outline: none;
+}
+
+.footer-links{
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #A8DADC;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #F1FAEE;
+}

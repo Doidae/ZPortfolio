@@ -47,3 +47,9 @@ window.addEventListener("scroll", function () {
 document.getElementById("myButton").onclick = function () {
     window.location.href = "www.github.com";
 };
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+document.getElementById("last-updated").textContent = document.lastModified;
