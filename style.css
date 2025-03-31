@@ -120,8 +120,25 @@ nav li:first-child {
     color: #555;
 }
 
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
 .About h1 {
     margin: 20px;
+    font-size: 2rem;
+    color: #1D3557;
+    margin-bottom: 20px;
+}
+.About p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 700px;
+    line-height: 1.6;
 }
 
 .projects-container {
@@ -149,6 +166,7 @@ nav li:first-child {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     max-width: 300px;
+    max-height: 400px;
 }
 
 .project-card:hover {
