@@ -10,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
 }
-
+/* Navation */
 nav {
     background-color: #1D3557;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
@@ -50,7 +50,7 @@ nav a:hover {
 nav li:first-child {
     margin-right: auto;
 }
-
+/* Side bar when screen gets small  */
 .sidebar {
     position: fixed;
     top: 0;
@@ -78,7 +78,7 @@ nav li:first-child {
 .sidebar a:hover {
     background-color: #A8DADC;
 }
-
+/* Default layout */
 .intro, .About, .Projects, .Contact {
     display: flex;
     align-items: center;
@@ -166,11 +166,12 @@ nav li:first-child {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
     max-width: 300px;
-    max-height: 400px;
+    max-height: 200px;
 }
 
 .project-card:hover {
     transform: scale(1.05);
+    max-height: 400px;
 }
 
 .project-card img {
@@ -182,6 +183,7 @@ nav li:first-child {
 .project-info {
     padding: 20px;
     text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
 .project-info h2 {
@@ -313,6 +315,10 @@ input[type=button] {
     .projects-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .project-card {
+        max-height: 400px;
     }
 }
 
