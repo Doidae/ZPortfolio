@@ -186,10 +186,11 @@ nav li:first-child {
 
 .project-card {
     background: #fff;
+    position: relative;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
     max-width: 300px;
     max-height: 200px;
 }
